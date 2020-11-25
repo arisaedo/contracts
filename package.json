@@ -1,7 +1,7 @@
 {
   "name": "contract-erc721",
-  "version": "1.0.0",
-  "description": "",
+  "helop": "1.0.0",
+  "description": "This repository maintains the collection of ERC721-based contracts that is used by Arisaedo",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
