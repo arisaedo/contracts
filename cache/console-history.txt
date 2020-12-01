@@ -1,0 +1,5 @@
+game.awardItem("0x8626f6940e2eb28930efb4cef49b2d1f2c9c1199", "https://game.example/item-id-8u5h2m.json")
+game
+const game = await gameItem.attach("0x5fbdb2315678afecb367f032d93f642f64180aa3")
+gameItem
+const gameItem = await ethers.getContractFactory("GameItem")
