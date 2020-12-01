@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/arisaedo/contract-erc721/issues"
   },
-  "homepage": "https://github.com/arisaedo/contract-erc721#readme"
+  "homepage": "https://github.com/arisaedo/contract-erc721#readme",
+  "dependencies": {
+    "@openzeppelin/cli": "^2.8.2"
+  }
 }
