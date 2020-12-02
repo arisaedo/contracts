@@ -1,10 +1,10 @@
 async function main () {
   // get contract to deploy
-  const GameItem = await ethers.getContractFactory('GameItem')
-  console.log('Deploying game')
-  const game = await GameItem.deploy()
-  await game.deployed()
-  console.log('GameItem deployed to', game.address)
+  const MyNFT = await ethers.getContractFactory('MyNFT')
+  console.log('Deploying my NFT')
+  const nft = await MyNFT.deploy()
+  await nft.deployed()
+  console.log('MyNFT deployed to', nft.address)
 }
 
 main()
