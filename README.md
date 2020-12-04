@@ -18,3 +18,6 @@ Benefits
 
 ## Future
 1. CLI for cross-environment.
+
+## Spike
+1. Web Application to Mint these tokens as a test ~~
