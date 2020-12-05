@@ -537,8 +537,8 @@
       ]
     },
     "/home/sid/repos/web3/arisaedo/contract-erc721/contracts/MyNFT.sol": {
-      "lastModificationDate": 1607146365943,
-      "contentHash": "efa0c7b6d6f99c844ec4d602c8edb09f",
+      "lastModificationDate": 1607147894697,
+      "contentHash": "4405567f55848a9ac72a9691de8bb19c",
       "sourceName": "contracts/MyNFT.sol",
       "solcConfig": {
         "version": "0.7.3",

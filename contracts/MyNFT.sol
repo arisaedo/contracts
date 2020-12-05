@@ -15,26 +15,37 @@ contract MyNFT is ERC721 {
     constructor() ERC721("MyNFT", "NFT") public {}
 
     // mint token, owned by caller
-    // @returns tokenID
+    // @returns (uint256) tokenID
     function mintToken() public returns (uint256) {
         _tokenIds.increment();
         uint256 newTokenId = _tokenIds.current();
-        _mint(msg.sender, newTokenId);
+        _safeMint(msg.sender, newTokenId);
 
         tokenHolder[msg.sender] = newTokenId;
 
         return newTokenId;
     }
 
+    // get balance of NFT tokens, owned by caller
+    // @returns (uint256) balance
     function getBalanceOf() public view returns (uint256) {
         uint256 balance = balanceOf(msg.sender);
-
         return balance;
     }
 
-    function ownerOfToken(uint256 tokenId) public view returns (address) {
-        address owner = ownerOf(tokenId);
+    // get owner of token
+    // @param (uint256) tokenId - ID of token
+    // @returns (uint256) address - owner of tokenId
+    function ownerOfToken(uint256 _tokenId) public view returns (address) {
+        address owner = ownerOf(_tokenId);
         return owner;
     }
 
+    // transfer token
+    // @param (address) from - transfer token from address
+    // @param (address) to - transfer token to address
+    // @param (address) tokenId - token ID of token
+    function transferToken(address _from, address _to, uint256 tokenId) public {
+        safeTransferFrom(_from, _to, tokenId);
+    }
 }
