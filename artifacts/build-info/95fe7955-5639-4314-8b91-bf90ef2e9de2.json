@@ -1,0 +1,223 @@
+{
+  "id": "95fe7955-5639-4314-8b91-bf90ef2e9de2",
+  "_format": "hh-sol-build-info-1",
+  "solcVersion": "0.5.0",
+  "solcLongVersion": "0.5.0+commit.1d4f565a",
+  "input": {
+    "language": "Solidity",
+    "sources": {
+      "contracts/Counter.sol": {
+        "content": "// contracts/Counter.sol\npragma solidity ^0.5.0;\n\ncontract Counter {\n    uint256 public value;\n\n    function increase() public {\n      value++;\n    }\n}\n"
+      }
+    },
+    "settings": {
+      "optimizer": {
+        "enabled": false,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  "output": {
+    "contracts": {
+      "contracts/Counter.sol": {
+        "Counter": {
+          "abi": [
+            {
+              "constant": true,
+              "inputs": [],
+              "name": "value",
+              "outputs": [
+                {
+                  "name": "",
+                  "type": "uint256"
+                }
+              ],
+              "payable": false,
+              "stateMutability": "view",
+              "type": "function"
+            },
+            {
+              "constant": false,
+              "inputs": [],
+              "name": "increase",
+              "outputs": [],
+              "payable": false,
+              "stateMutability": "nonpayable",
+              "type": "function"
+            }
+          ],
+          "evm": {
+            "bytecode": {
+              "linkReferences": {},
+              "object": "608060405234801561001057600080fd5b5060cf8061001f6000396000f3fe6080604052600436106049576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680633fa4f24514604e578063e8927fbc146076575b600080fd5b348015605957600080fd5b506060608a565b6040518082815260200191505060405180910390f35b348015608157600080fd5b5060886090565b005b60005481565b600080815480929190600101919050555056fea165627a7a72305820ca35878b8b34d9f334418031aca7f76facc4f440a1923d6bc513f0f1a2a24b6b0029",
+              "opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH2 0x10 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0xCF DUP1 PUSH2 0x1F PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x4 CALLDATASIZE LT PUSH1 0x49 JUMPI PUSH1 0x0 CALLDATALOAD PUSH29 0x100000000000000000000000000000000000000000000000000000000 SWAP1 DIV PUSH4 0xFFFFFFFF AND DUP1 PUSH4 0x3FA4F245 EQ PUSH1 0x4E JUMPI DUP1 PUSH4 0xE8927FBC EQ PUSH1 0x76 JUMPI JUMPDEST PUSH1 0x0 DUP1 REVERT JUMPDEST CALLVALUE DUP1 ISZERO PUSH1 0x59 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x60 PUSH1 0x8A JUMP JUMPDEST PUSH1 0x40 MLOAD DUP1 DUP3 DUP2 MSTORE PUSH1 0x20 ADD SWAP2 POP POP PUSH1 0x40 MLOAD DUP1 SWAP2 SUB SWAP1 RETURN JUMPDEST CALLVALUE DUP1 ISZERO PUSH1 0x81 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x88 PUSH1 0x90 JUMP JUMPDEST STOP JUMPDEST PUSH1 0x0 SLOAD DUP2 JUMP JUMPDEST PUSH1 0x0 DUP1 DUP2 SLOAD DUP1 SWAP3 SWAP2 SWAP1 PUSH1 0x1 ADD SWAP2 SWAP1 POP SSTORE POP JUMP INVALID LOG1 PUSH6 0x627A7A723058 KECCAK256 0xca CALLDATALOAD DUP8 DUP12 DUP12 CALLVALUE 0xd9 RETURN CALLVALUE COINBASE DUP1 BALANCE 0xac 0xa7 0xf7 PUSH16 0xACC4F440A1923D6BC513F0F1A2A24B6B STOP 0x29 ",
+              "sourceMap": "50:101:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;50:101:0;;;;;;;"
+            },
+            "deployedBytecode": {
+              "linkReferences": {},
+              "object": "6080604052600436106049576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680633fa4f24514604e578063e8927fbc146076575b600080fd5b348015605957600080fd5b506060608a565b6040518082815260200191505060405180910390f35b348015608157600080fd5b5060886090565b005b60005481565b600080815480929190600101919050555056fea165627a7a72305820ca35878b8b34d9f334418031aca7f76facc4f440a1923d6bc513f0f1a2a24b6b0029",
+              "opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x4 CALLDATASIZE LT PUSH1 0x49 JUMPI PUSH1 0x0 CALLDATALOAD PUSH29 0x100000000000000000000000000000000000000000000000000000000 SWAP1 DIV PUSH4 0xFFFFFFFF AND DUP1 PUSH4 0x3FA4F245 EQ PUSH1 0x4E JUMPI DUP1 PUSH4 0xE8927FBC EQ PUSH1 0x76 JUMPI JUMPDEST PUSH1 0x0 DUP1 REVERT JUMPDEST CALLVALUE DUP1 ISZERO PUSH1 0x59 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x60 PUSH1 0x8A JUMP JUMPDEST PUSH1 0x40 MLOAD DUP1 DUP3 DUP2 MSTORE PUSH1 0x20 ADD SWAP2 POP POP PUSH1 0x40 MLOAD DUP1 SWAP2 SUB SWAP1 RETURN JUMPDEST CALLVALUE DUP1 ISZERO PUSH1 0x81 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x88 PUSH1 0x90 JUMP JUMPDEST STOP JUMPDEST PUSH1 0x0 SLOAD DUP2 JUMP JUMPDEST PUSH1 0x0 DUP1 DUP2 SLOAD DUP1 SWAP3 SWAP2 SWAP1 PUSH1 0x1 ADD SWAP2 SWAP1 POP SSTORE POP JUMP INVALID LOG1 PUSH6 0x627A7A723058 KECCAK256 0xca CALLDATALOAD DUP8 DUP12 DUP12 CALLVALUE 0xd9 RETURN CALLVALUE COINBASE DUP1 BALANCE 0xac 0xa7 0xf7 PUSH16 0xACC4F440A1923D6BC513F0F1A2A24B6B STOP 0x29 ",
+              "sourceMap": "50:101:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;73:20;;8:9:-1;5:2;;;30:1;27;20:12;5:2;73:20:0;;;;;;;;;;;;;;;;;;;;;;;100:49;;8:9:-1;5:2;;;30:1;27;20:12;5:2;100:49:0;;;;;;73:20;;;;:::o;100:49::-;135:5;;:7;;;;;;;;;;;;;100:49::o"
+            },
+            "methodIdentifiers": {
+              "increase()": "e8927fbc",
+              "value()": "3fa4f245"
+            }
+          }
+        }
+      }
+    },
+    "sources": {
+      "contracts/Counter.sol": {
+        "ast": {
+          "absolutePath": "contracts/Counter.sol",
+          "exportedSymbols": {
+            "Counter": [
+              11
+            ]
+          },
+          "id": 12,
+          "nodeType": "SourceUnit",
+          "nodes": [
+            {
+              "id": 1,
+              "literals": [
+                "solidity",
+                "^",
+                "0.5",
+                ".0"
+              ],
+              "nodeType": "PragmaDirective",
+              "src": "25:23:0"
+            },
+            {
+              "baseContracts": [],
+              "contractDependencies": [],
+              "contractKind": "contract",
+              "documentation": null,
+              "fullyImplemented": true,
+              "id": 11,
+              "linearizedBaseContracts": [
+                11
+              ],
+              "name": "Counter",
+              "nodeType": "ContractDefinition",
+              "nodes": [
+                {
+                  "constant": false,
+                  "id": 3,
+                  "name": "value",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11,
+                  "src": "73:20:0",
+                  "stateVariable": true,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "73:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "public"
+                },
+                {
+                  "body": {
+                    "id": 9,
+                    "nodeType": "Block",
+                    "src": "127:22:0",
+                    "statements": [
+                      {
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 7,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "nodeType": "UnaryOperation",
+                          "operator": "++",
+                          "prefix": false,
+                          "src": "135:7:0",
+                          "subExpression": {
+                            "argumentTypes": null,
+                            "id": 6,
+                            "name": "value",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 3,
+                            "src": "135:5:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "id": 8,
+                        "nodeType": "ExpressionStatement",
+                        "src": "135:7:0"
+                      }
+                    ]
+                  },
+                  "documentation": null,
+                  "id": 10,
+                  "implemented": true,
+                  "kind": "function",
+                  "modifiers": [],
+                  "name": "increase",
+                  "nodeType": "FunctionDefinition",
+                  "parameters": {
+                    "id": 4,
+                    "nodeType": "ParameterList",
+                    "parameters": [],
+                    "src": "117:2:0"
+                  },
+                  "returnParameters": {
+                    "id": 5,
+                    "nodeType": "ParameterList",
+                    "parameters": [],
+                    "src": "127:0:0"
+                  },
+                  "scope": 11,
+                  "src": "100:49:0",
+                  "stateMutability": "nonpayable",
+                  "superFunction": null,
+                  "visibility": "public"
+                }
+              ],
+              "scope": 12,
+              "src": "50:101:0"
+            }
+          ],
+          "src": "25:127:0"
+        },
+        "id": 0
+      }
+    }
+  }
+}

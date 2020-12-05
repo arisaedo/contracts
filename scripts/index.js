@@ -12,7 +12,7 @@ async function main () {
   console.log('Balance: ', balance.toNumber())
 
   // get owner of token
-  const owner = await nft.ownerOfToken(0)
+  const owner = await nft.ownerOfToken(1)
   console.log('Owner: ', owner)
 }
 

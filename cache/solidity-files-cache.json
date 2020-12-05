@@ -537,8 +537,8 @@
       ]
     },
     "/home/sid/repos/web3/arisaedo/contract-erc721/contracts/MyNFT.sol": {
-      "lastModificationDate": 1606889552650,
-      "contentHash": "5e2a47e70fd545c5db20efa3b1e9d3da",
+      "lastModificationDate": 1607146365943,
+      "contentHash": "efa0c7b6d6f99c844ec4d602c8edb09f",
       "sourceName": "contracts/MyNFT.sol",
       "solcConfig": {
         "version": "0.7.3",
@@ -571,6 +571,40 @@
       ],
       "artifacts": [
         "MyNFT"
+      ]
+    },
+    "/home/sid/repos/web3/arisaedo/contract-erc721/contracts/Counter.sol": {
+      "lastModificationDate": 1607144043985,
+      "contentHash": "d39d5fb67468ab13143b264049c89c83",
+      "sourceName": "contracts/Counter.sol",
+      "solcConfig": {
+        "version": "0.5.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.5.0"
+      ],
+      "artifacts": [
+        "Counter"
       ]
     }
   }

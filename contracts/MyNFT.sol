@@ -32,10 +32,8 @@ contract MyNFT is ERC721 {
         return balance;
     }
 
-    function ownerOfToken(uint256 tokenIndex) public v returns (address) {
-        uint tokenId = tokenByIndex(tokenIndex);
+    function ownerOfToken(uint256 tokenId) public view returns (address) {
         address owner = ownerOf(tokenId);
-
         return owner;
     }
 

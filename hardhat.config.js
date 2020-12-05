@@ -4,5 +4,13 @@
 require('@nomiclabs/hardhat-ethers')
 
 module.exports = {
-  solidity: '0.7.3'
+  solidity: {
+    compilers: [{
+      version: '0.7.3'
+    },
+    {
+      version: '0.5.0'
+    }
+    ]
+  }
 }
