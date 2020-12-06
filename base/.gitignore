@@ -104,3 +104,9 @@ dist
 .tern-port
 
 .openzeppelin/.session
+
+node_modules
+
+#Hardhat files
+cache
+artifacts
