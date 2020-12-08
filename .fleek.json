@@ -1,7 +1,0 @@
-{
- "build": {
-   "image": "node:alpine",
-   "command": "cd application && npm install && npm run build && npm run export",
-   "publicDir": "out",
-   "baseDir": "application",
-}
