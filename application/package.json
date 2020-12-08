@@ -10,6 +10,11 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "next": "10.0.3",
+    "react": "17.0.1",
+    "react-dom": "17.0.1"
+  },
+  "devDependencies": {
     "@zeit/next-source-maps": "^0.0.3",
     "eslint": "^7.15.0",
     "eslint-config-standard": "^16.0.2",
@@ -17,17 +22,12 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^5.0.0",
-    "next": "10.0.3",
-    "next-compose-plugins": "^2.2.1",
-    "next-optimized-images": "^2.6.2",
-    "postcss-preset-env": "^6.7.0",
-    "react": "17.0.1",
-    "react-dom": "17.0.1",
-    "tsconfig-paths-webpack-plugin": "^3.3.0"
-  },
-  "devDependencies": {
+    "tsconfig-paths-webpack-plugin": "^3.3.0",
     "@types/node": "^14.14.10",
     "@types/react": "^17.0.0",
-    "typescript": "^4.1.2"
+    "typescript": "^4.1.2",
+    "next-compose-plugins": "^2.2.1",
+    "next-optimized-images": "^2.6.2",
+    "postcss-preset-env": "^6.7.0"
   }
 }
