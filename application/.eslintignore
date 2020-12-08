@@ -1,0 +1,6 @@
+# nextjs
+/.next/
+/out/
+
+# dependencies
+/node_modules

@@ -1,5 +1,3 @@
-/* eslint-disabled */
-
 const optimizedImages = require("next-optimized-images");
 const withPlugins = require("next-compose-plugins");
 const withSourceMaps = require("@zeit/next-source-maps");
@@ -21,7 +19,7 @@ const nextConfig = {
     config.module.rules.push({
       test: /\.(eot|woff|woff2|ttf|svg|png|jpg|gif)$/,
       use: {
-          loader: "url-loader",
+        loader: "url-loader",
         options: {
           limit: 100000,
           name: "[name].[ext]",
