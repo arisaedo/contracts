@@ -1,0 +1,24 @@
+{
+  "name": "contracts",
+  "version": "1.0.0",
+  "description": "## Ideas Create an interface implementation with multi-signature contracts and NFTs. Benefits   -  Developers can easily build highly modular NFT-oriented systems.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "setup": "cd application && yarn && cd ../base && yarn",
+    "clean": "cd application && rm -rf node_modules/ && cd ../base && rm -rf node_modules/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arisaedo/contracts.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arisaedo/contracts/issues"
+  },
+  "homepage": "https://github.com/arisaedo/contracts#readme",
+  "dependencies": {
+    "concurrently": "^5.3.0"
+  }
+}
