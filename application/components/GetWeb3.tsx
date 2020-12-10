@@ -1,11 +1,11 @@
 import { ethers } from "ethers"
-import React, { MouseEvent, FunctionComponent } from "react"
+import React, { MouseEvent } from "react"
 
 export default function GetWeb3(): any {
   async function handleClick(e: MouseEvent) {
     e.preventDefault();
 
-    let provider: any = new ethers.providers.Web3Provider(window.ethereum);
+    let provider: any = new ethers.providers.Web3Provider((window as any).ethereum);
     console.log("Block number: ", await provider.getBlockNumber())
 
     let accounts: Array<String> = await provider.listAccounts()
@@ -13,8 +13,8 @@ export default function GetWeb3(): any {
 
     let balance: BigInteger = await provider.getBalance(accounts[0])
     console.log("Ether balance: ", ethers.utils.formatEther(balance))
-
   }
+
   return (
     <button onClick={handleClick}>Get Web3</button>
   )
