@@ -4,7 +4,7 @@ import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
 
 
-contract MyNFT is ERC721 {
+contract NFT is ERC721 {
     // counter for token ID
     using Counters for Counters.Counter;
     Counters.Counter private _tokenIds;
@@ -12,7 +12,7 @@ contract MyNFT is ERC721 {
     // map address to token ID
     mapping (address => uint256) internal tokenHolder;
 
-    constructor() ERC721("MyNFT", "NFT") public {}
+    constructor() ERC721("Another Random NFT", "NFT") public {}
 
     // mint token, owned by caller
     // @returns (uint256) tokenID
