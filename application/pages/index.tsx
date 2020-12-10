@@ -4,7 +4,7 @@ import styles from '../styles/Home.module.css'
 import dynamic from 'next/dynamic'
 
 let DynamicComponent: any = dynamic(
-  () => import("./api/GetWeb3"), { ssr: false }
+  () => import("../components/GetWeb3"), { ssr: false }
 )
 
 
