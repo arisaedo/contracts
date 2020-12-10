@@ -1,15 +1,15 @@
 const { expect } = require('chai')
 
 // start test block
-describe('MyNFT Token', function () {
+describe('NFT Token', function () {
   // get contract instance
   before(async function () {
-    this.MyNFT = await ethers.getContractFactory('MyNFT')
+    this.NFT = await ethers.getContractFactory('NFT')
   })
 
   // deploy contract before each test case
   beforeEach(async function () {
-    this.nft = await this.MyNFT.deploy()
+    this.nft = await this.NFT.deploy()
     await this.nft.deployed()
   })
 
