@@ -1,7 +1,15 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+// import GetWeb3 from "./api/GetWeb3"
+import dynamic from 'next/dynamic'
+
+let DynamicComponent: any = dynamic(
+  () => import("../components/GetWeb3"), { ssr: false }
+)
+
 
 export default function Home() {
+  // DynamicComponent
   return (
     <div className={styles.container}>
       <Head>
@@ -13,6 +21,8 @@ export default function Home() {
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
+        { /* <GetWeb3 /> */}
+        <DynamicComponent />
 
         <p className={styles.description}>
           Get started by editing{' '}
