@@ -14,15 +14,19 @@ async function main() {
   // await hre.run('compile');
 
   // We get the contract to deploy
-  const Box = await ethers.getContractFactory("Box");
-  console.log("Deploying Box...");
-  const box = await Box.deploy();
-  await box.deployed();
-  console.log("Box deployed to:", box.address);
-
-
+  const game = await deployGameItem()
   const accounts = await ethers.provider.listAccounts();
 }
+
+const deployGameItem = async () => {
+  const GameItem = await ethers.getContractFactory("GameItem")
+  console.log("Deploying GameItem...");
+  const game = await GameItem.deploy();
+  await game .deployed();
+  console.log("GameItem deployed to:", game.address);
+  return game
+}
+
 
 main()
   .then(() => process.exit(0))
